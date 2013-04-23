@@ -1,0 +1,5 @@
+%h1 Current Watches
+
+%ul
+  - Monita.watches.each do |watch|
+    %li= link_to watch.name, watch_path(watch)
